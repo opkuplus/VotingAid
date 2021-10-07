@@ -1,0 +1,289 @@
+@media only screen and (max-width: 700px) {
+  /* -----------------------------------------
+      GLOBAL Style - START
+----------------------------------------- */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 991px;
+    display: flex;
+  }
+  body {
+    background: #e0e0e0; /* fallback for old browsers */
+    /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; */
+    /* background-blend-mode: multiply, multiply; */
+    /* height: 100%; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .BodyColor {
+    background: #1d1c1c;
+  }
+
+  /* -----------------------------------------
+      GLOBAL Style - START
+----------------------------------------- */
+
+  .homeScreen {
+    border: 2px rgba(255, 255, 255, 0.829) solid;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .App {
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  /*---------------------*/
+  .radio {
+    width: 100%;
+  }
+
+  .boxContainer {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .boxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkPassive {
+    display: block;
+    height: 20px;
+    width: 50px;
+    background-color: #eee;
+    border-radius: 0%;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .checkPassive:hover {
+    background-color: #ccc;
+  }
+
+  /* When the radio button is checked, add a gray background */
+  .checkActive {
+    display: block;
+    height: 20px;
+    width: 50px;
+    border-radius: 0%;
+    background-color: rgb(118, 120, 122);
+  }
+
+  .filterCandidateLabel {
+    min-width: max-content;
+  }
+
+  .addOneCandidate {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 5px; */
+    background-color: rgba(255, 255, 255, 0.829);
+    border: 2px white solid;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .formQuestions {
+    margin-top: 20px;
+    /* border-radius: 5px; */
+    background-color: rgba(255, 255, 255, 0.829);
+    border: 2px white solid;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .questionsSelectBox {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  small {
+    font-size: 50%;
+  }
+  .disa {
+    margin-right: 50%;
+  }
+  input[type="radio"]:checked {
+    background-color: green;
+    border-radius: 25px;
+  }
+  .signup {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .Modal {
+    background-color: yellow;
+  }
+  /*DELETE THESE AT SOMEPOINT**/
+  a {
+    margin: 10px;
+    text-decoration: none !important;
+    color: black;
+  }
+  a:hover {
+    color: white;
+  }
+  .choice {
+    display: flex;
+    justify-content: center;
+  }
+  .login {
+    border: 2px rgba(255, 255, 255, 0.829) solid;
+    padding-bottom: 7px;
+    width: 40%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 1%;
+  }
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    padding: 5px 20px;
+    margin-bottom: 6px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .addCandidates {
+    border: 2px rgba(255, 255, 255, 0.829) solid;
+    width: 40%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 1%;
+  }
+  .questionSet {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.829);
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+  }
+  .ans-button {
+    width: 30%;
+    margin: auto;
+  }
+  .ans-button:hover {
+    background-color: white;
+  }
+  .Form-button {
+    border: 1px solid #43571a;
+    transition: 0.5s;
+    background-color: #80ae35;
+    width: 100%;
+    margin: 5px 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0;
+    font-weight: 600;
+  }
+  .Form-button:hover {
+    background-color: #43571a;
+    border: 1px solid #80ae35;
+    color: white;
+  }
+
+  .filled-form {
+    width: auto;
+    display: inline-block;
+  }
+  /* -----------------------------------------------
+    Style of NavLogin Component - START
+----------------------------------------------- */
+
+  .navLoginWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .navLoginWrapperLight {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.829);
+  }
+  .navLoginWrapperDark {
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.829);
+  }
+  .navLoginContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navLoginContainer span {
+  padding-left:10px;
+  font-size: 10px;
+  }
+  /* -----------------------------------------------
+    Style of NavLogin Component - END
+----------------------------------------------- */
+
+  .candidateSuggestions {
+    border: 2px rgba(255, 255, 255, 0.829) solid;
+    padding-bottom: 7px;
+    width: 50%;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .pic {
+    width: 18%;
+    border-radius: 50%;
+    /* height: 10%; */
+  }
+  .candidateSuggestionCenter {
+    display: flex;
+    /* border: purple solid 2px; */
+    justify-content: right;
+  }
+  .white:hover {
+    color: blue;
+  }
+  #candidate {
+    border-bottom: solid black 2px;
+  }
+  .profileForm {
+    border-radius: 1%;
+    background-color: rgba(255, 255, 255, 0.829);
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    justify-content: left;
+    border: 2px white solid;
+    padding-top: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .profileInput {
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+/* 'change this to match the a phone screen ' */
